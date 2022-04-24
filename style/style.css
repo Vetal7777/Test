@@ -1475,15 +1475,21 @@ nav .footer__social {
       -ms-flex-pack: center;
           justify-content: center;
   opacity: 0;
+  -webkit-transform: matrix(1, 0, 0, 0, 0, 0);
+      -ms-transform: matrix(1, 0, 0, 0, 0, 0);
+          transform: matrix(1, 0, 0, 0, 0, 0);
 }
 .toggle-menu.active {
   height: 100vh;
   opacity: 1;
+  -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+      -ms-transform: matrix(1, 0, 0, 1, 0, 0);
+          transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .toggle-menu .exit {
   width: 15vw;
   height: 15vw;
-  position: fixed;
+  position: absolute;
   background-color: white;
   padding: 4vw;
   border-radius: 50%;
@@ -1502,7 +1508,7 @@ nav .footer__social {
   width: 90vw;
   background-color: white;
   border-radius: 12px 12px 0 0;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   row-gap: 20px;
   display: -webkit-box;
