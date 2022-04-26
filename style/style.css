@@ -1732,3 +1732,6 @@ nav .footer__social {
 body {
   position: relative;
 }
+body.overflow {
+  overflow-y: hidden;
+}
