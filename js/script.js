@@ -41,12 +41,14 @@ function lazyScrollCheck(){
 // <!--    Modal-->
 $(document).ready(function (){
     $('.toggle').on('click', function () {
-        $('.toggle-menu').toggleClass('active')
+        $('.toggle-menu').toggleClass('active'),
+        $('body').toggleClass('overflow')
     })
 })
 $(document).ready(function (){
     $('.exit').on('click', function () {
         $('.toggle-menu').removeClass('active')
+        $('body').removeClass('overflow')
     })
 })
 
